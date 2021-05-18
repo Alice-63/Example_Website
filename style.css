@@ -1,0 +1,132 @@
+*{box-sizing: border-box;}
+body{margin: 0;font-family: "Segoe UI";}
+
+:root
+{
+    --priymary:#ed6809;
+    --text:#111;
+}
+
+.container
+{
+    max-width: 1500px;
+    margin: 0 auto;
+    
+
+}
+
+.logoContainer
+{
+    font-size: 2.5em;
+    color:var(--priymary) ;
+    font-weight: bold;
+    padding: 25px 0;
+
+}
+nav{
+    background-color: #eee;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+
+}
+nav ul a
+{
+padding: 12px 20px;
+display: block;
+text-decoration: none;
+border-left: 1px solid #ccc;
+
+}
+
+
+nav ul li.aktiv a
+{
+    background-color: var(--priymary);
+    color: white;
+}
+
+/* ================Main===============*/
+
+main .container
+{
+    display: flex;
+}
+
+main .inhalt
+{
+    width: 70%;
+
+}
+
+main aside 
+{
+    width: 30%;
+}
+.produkte
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card
+{
+    width: 32%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.card>span
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text);
+    text-align: center;
+    padding: 10px 0 ;
+    border-bottom: 1px solid #eee;
+}
+
+.card .bild
+{
+   height: 240px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card .bild img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.info
+{
+    display: flex;
+    padding: 12px 0;
+    background-color: #ececec;
+}
+
+.info>*
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.info .rechts button
+{
+    border-right: 1px solid #ccc;
+    
+    
+}
+
+.info 
