@@ -4,6 +4,7 @@ body{margin: 0;font-family: "Segoe UI";}
 :root
 {
     --priymary:#ed6809;
+    --primary-dark:#cc5805;
     --text:#111;
 }
 
@@ -13,6 +14,10 @@ body{margin: 0;font-family: "Segoe UI";}
     margin: 0 auto;
     
 
+}
+a{
+    text-decoration: none;
+    color: var(--text);
 }
 
 .logoContainer
@@ -57,6 +62,7 @@ nav ul li.aktiv a
 main .container
 {
     display: flex;
+    padding-top: 25px;
 }
 
 main .inhalt
@@ -67,7 +73,21 @@ main .inhalt
 
 main aside 
 {
-    width: 30%;
+    width: 27%;
+    border: 1px solid #eee;
+    margin-top: 70px;
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.34);
+    margin-left: 3%;
+    padding: 15px 35px;
+}
+aside>h3{
+    text-align: center;
+}
+
+.inhalt>h1
+{
+    height: 70px;
+    margin: 0;
 }
 .produkte
 {
@@ -81,7 +101,8 @@ main aside
 {
     width: 32%;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.34);
 }
 .card>span
 {
@@ -91,6 +112,7 @@ main aside
     text-align: center;
     padding: 10px 0 ;
     border-bottom: 1px solid #eee;
+    display: block;
 }
 
 .card .bild
@@ -99,6 +121,7 @@ main aside
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 15px;
 }
 
 .card .bild img{
@@ -122,11 +145,50 @@ main aside
     padding: 12px 0;
 }
 
-.info .rechts button
+.info .links
 {
     border-right: 1px solid #ccc;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--priymary);
     
     
 }
 
-.info 
+.info .rechts button
+{
+    padding: 9px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: var(--priymary);
+    color: white;
+    cursor: pointer;
+}
+.info .rechts button:hover
+
+{
+    background-color: var(--primary-dark);
+}
+
+#warenkorb .eintrag
+{
+    margin-bottom: 10px;
+}
+
+#warenkorb div
+{
+margin-bottom: 10px;
+}
+
+aside>button
+{
+    padding: 9px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: var(--priymary);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
