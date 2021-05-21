@@ -33,12 +33,21 @@ nav{
     border-top:1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
+nav>div 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0 ;
     display: flex;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    
 
 }
 nav ul a
@@ -191,4 +200,18 @@ aside>button
     color: white;
     cursor: pointer;
     width: 100%;
+}
+aside>button:hover
+{
+background-color: var(--primary-dark);
+}
+
+#gesamtKosten
+{
+    margin: 15px 0;
+}
+#meldung
+{margin-top: 15px;
+    padding: 10px;
+    color: white;
 }
